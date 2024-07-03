@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         duration: 1.5,
         ease: "power2.out",
         stagger: 0.3,
-        delay: 2,
+        delay: 1,
       }
     );
   }
