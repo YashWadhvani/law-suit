@@ -25,12 +25,7 @@
   <div class="container-fluid">
     <div class="navbar">
       <div class="logo"><img src="assets/Lawsuit Identity d2-10.png" alt="lawsuit-logo" /></div>
-      <input type="checkbox" id="check" />
-      <label for="check" class="icons">
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <i class="bx bx-x" id="close-icon"></i>
-      </label>
-      <div class="menu">
+      <div class="navbar-menu">
         <a class="nav-link" href="index2.html">Home</a>
         <a class="nav-link" href="about-us.html">About Us</a>
         <a class="nav-link" href="pricing.html">Pricing</a>
@@ -39,6 +34,26 @@
         <a href="#" class="custom-button header-btn">
           <span>Start For Free</span>
         </a>
+      </div>
+
+      <div class="overlay">
+        <div class="logo"><img src="assets/Lawsuit Identity d2-10.png" alt="lawsuit-logo" /></div>
+        <div class="menu" id="menu">
+          <a class="nav-link" href="index2.html">Home</a>
+          <a class="nav-link" href="about-us.html">About Us</a>
+          <a class="nav-link" href="pricing.html">Pricing</a>
+          <a class="nav-link" href="FAQ.html">FAQ</a>
+          <a class="nav-link" href="contact-us.html">Contact</a>
+        </div>
+        <div class="menuFooter">
+          <p>Get in Touch</p>
+          <a href="mailto:">user@gmail.com</a>
+        </div>
+      </div>
+      <div class="hamburger">
+        <span class="nav-line" id="navLine1"> </span>
+        <span class="nav-line" id="navLine2"> </span>
+        <span class="nav-line" id="navLine3"> </span>
       </div>
     </div>
 
@@ -837,7 +852,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="script.js"></script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
@@ -847,6 +862,7 @@
       },
     });
   </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
