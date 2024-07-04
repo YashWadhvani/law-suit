@@ -83,22 +83,22 @@ html {
 }
 
 .overlay {
-  position: fixed; /* Change made: Added fixed position */
+  position: fixed;
   top: 0;
-  left: 0;
+  right: -100%;
   width: 100%;
   height: 100%;
-  background-color: white; /* Change made: Updated color */
-  opacity: 0;
+  background-color: white;
+  opacity: 1;
   pointer-events: none;
   transition: opacity 0.3s ease;
   z-index: 1000;
-  display: none;
+  /* display: none; */
 }
 
 .overlay .menu {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -127,7 +127,7 @@ html {
   color: #64728d;
   margin: 5px 0;
   text-decoration: none;
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: 700;
   font-family: "IBM Plex Sans";
 }
@@ -140,6 +140,7 @@ html {
   opacity: 1;
   pointer-events: auto;
   display: block;
+  right: 0;
 }
 
 .logo {
@@ -1188,7 +1189,7 @@ html {
 
 @media screen and (max-width: 767px) {
   .accordion {
-    padding: 0 16px;
+    padding: 0 30px;
   }
   .accordion h1 {
     font-size: 10.5rem;
@@ -1486,15 +1487,10 @@ html {
   }
 
   .menu .nav-link {
-    font-size: 10rem !important;
+    font-size: 15rem !important;
     margin: 10rem 0 !important;
     text-align: center;
     color: #64728d !important;
-  }
-
-  .overlay .menu .nav-link,
-  .overlay .menu .header-btn {
-    font-size: 4.8rem; /* Change made: Updated font size for mobile */
   }
 
   .footer .container .col-sm-6 img {
@@ -1507,7 +1503,7 @@ html {
   }
 
   .footer .container .col-sm-6 {
-    margin-left: -25px;
+    margin-left: -5px;
   }
 
   .app-store img,
@@ -1558,7 +1554,7 @@ html {
   .second {
     background: #004a9a;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 30px;
     color: white;
   }
 
@@ -1657,7 +1653,7 @@ html {
     padding-bottom: 40px;
   }
   .section3 {
-    padding-top: 40px;
+    padding: 20px 30px 0 30px;
   }
 
   .section3 h2 {
@@ -1674,7 +1670,6 @@ html {
     font-weight: 700;
   }
   .five .container-fluid {
-    margin: 15px;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -1682,10 +1677,11 @@ html {
     margin-top: 0;
     margin-bottom: 0;
     height: unset;
+    padding: 20px 30px 0 30px;
   }
 
   .five h1 {
-    font-size: 10rem;
+    font-size: 9.5rem;
     height: unset;
   }
   .five h2 {
@@ -1742,9 +1738,15 @@ html {
   .group-3 h1 {
     font-size: 10rem;
   }
+
+  .sixth {
+    padding: 0px 30px;
+    margin: 0;
+  }
+
   .section6 {
     display: flex;
-    padding-top: 0;
+    /* padding: 40px 30px 0 30px; */
     flex-direction: column-reverse;
   }
 
@@ -1773,8 +1775,8 @@ html {
   }
   .seven {
     margin-top: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .section7 h1 {
     font-size: 13.6rem;
@@ -1808,8 +1810,19 @@ html {
     padding-right: 15px;
     color: #64728d;
   }
+
+  .eight .container {
+    padding: 0 30px;
+  }
+
+  .group-5 .col-sm-10,
+  .col-sm-6,
+  .col-sm-8 {
+    padding: 0;
+  }
+
   .date {
-    padding: 10px 20px;
+    padding: 10px 30px;
     background: #e8f3ff;
     margin: 5px;
     border-radius: 10px;
@@ -1835,7 +1848,7 @@ html {
   }
   .group-4 {
     padding: 0;
-    height: 180rem;
+    height: 165rem;
   }
   .image-desc {
     position: absolute;
@@ -1843,12 +1856,13 @@ html {
     left: 40px;
   }
   .image-4 {
-    left: 85px;
+    left: 60px;
     width: 50%;
+    top: 175px;
   }
   .image-4 img {
-    width: 75vw;
-    height: 25vh;
+    width: 70vw;
+    height: 20vh;
   }
   .lawsuit-feature {
     font-size: 52px;
@@ -1870,7 +1884,7 @@ html {
   .call-to-action p {
     font-weight: 500;
     font-size: 5rem;
-    padding-top: 0;
+    padding: 0;
     margin-top: 0;
   }
 
@@ -1882,9 +1896,11 @@ html {
     display: flex;
     justify-content: center;
   }
+  .call-to-action .col-sm-6 {
+    padding: 15px 30px;
+  }
   .app-store {
     text-align: center;
-    margin-bottom: 10px;
   }
   .play-store {
     text-align: center;
@@ -1902,11 +1918,13 @@ html {
   /* About page */
   .aboutsection h1 {
     font-size: 11.5rem;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .about-us .img1 {
     margin-top: -160px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .mission p {
@@ -1921,10 +1939,10 @@ html {
     width: 15%;
   }
   .mission .col-sm-6 {
-    padding-right: 15px;
+    padding: 0 15px;
   }
   .vision .col-sm-6 {
-    padding-left: 15px;
+    padding: 0 15px;
   }
   .mission h1 {
     font-size: 11.5rem;
@@ -1942,7 +1960,14 @@ html {
   }
   .mission-vision {
     margin-bottom: 30px;
+    /* padding: 0 30px; */
   }
+
+  .about-section-3 {
+    padding: 0 30px;
+    margin-bottom: 30px;
+  }
+
   .about-section-3 p {
     padding-right: 0px;
     font-size: 5.5rem;
@@ -1960,17 +1985,20 @@ html {
   .about-section-3 .row {
     height: unset;
   }
+  .about-section-3 .container {
+    padding: 0;
+  }
   .image-gallary-1 img {
-    width: 92vw;
+    width: 84vw;
     height: 52vh;
   }
   .image-gallary-2 img {
-    width: 92vw;
-    height: 37.7vh;
+    width: 84vw;
+    height: 25vh;
   }
   .image-gallary-3 img {
-    width: 92vw;
-    height: 37.7vh;
+    width: 84vw;
+    height: 25vh;
   }
 
   /* pricing page */
@@ -2004,8 +2032,14 @@ html {
     box-shadow: 10px 10px 5px #d9eafd;
   }
   .card-section .container-fluid {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .card-section .container-fluid .row {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
   }
   .card .card-header {
     padding-left: 20px;
@@ -2067,6 +2101,14 @@ html {
     font-size: 4.9rem;
     font-weight: 600;
     padding-left: 20px;
+  }
+
+  span.mo {
+    font-size: 5.5rem !important;
+  }
+
+  .list ul li {
+    font-size: 4rem !important;
   }
 
   /* faq page */
@@ -2232,6 +2274,11 @@ html {
     font-size: 7.2rem;
     color: #004a9a;
   }
+
+  #contact .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -2246,6 +2293,16 @@ html {
     font-size: 3rem;
     font-weight: 700;
     padding-right: 30px;
+  }
+
+  .logo img {
+    position: relative;
+    right: 25px;
+    height: 24rem;
+  }
+
+  .header-btn {
+    width: 25rem !important;
   }
   .section-1 {
     background-color: #f1f5f9;

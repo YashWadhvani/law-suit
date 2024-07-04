@@ -14,30 +14,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
       gsap.to("#navLine2", { opacity: 0, duration: 0.3 });
       gsap.to("#navLine3", { rotation: -45, y: -6, duration: 0.3 });
       // gsap.to(".hamburger", { rotation: -90, x: -30, duration: 0.5, ease: "power4.easeIn" });
-      gsap.to(".overlay", {
-        opacity: 1,
-        duration: 0.3,
-        delay: 0.4,
-        onComplete: function () {
-          document.querySelector(".overlay").style.pointerEvents = "auto";
-        },
-      });
-      gsap.to("#menu", { right: "0%", duration: 0.9, ease: "expo.out" });
+      gsap.fromTo(
+        ".overlay",
+        { right: "-100%" }, // from
+        { right: "0%", ease: "expo.out" } // to
+      );
       overlay.classList.add("active");
     } else {
       gsap.to("#navLine1", { rotation: 0, y: 0, duration: 0.3 });
       gsap.to("#navLine2", { opacity: 1, duration: 0.3 });
       gsap.to("#navLine3", { rotation: 0, y: 0, duration: 0.3 });
       // gsap.to(".hamburger", { rotation: 0, x: 0, duration: 0.3,  ease: "power4.easeOut" });
-      gsap.to(".overlay", {
-        opacity: 0,
-        duration: 0.3,
-        delay: 0.2,
-        onComplete: function () {
-          document.querySelector(".overlay").style.pointerEvents = "none";
-        },
-      });
-      gsap.to("#menu", { right: "-100%", duration: 0.6, ease: "expo.in" });
+      gsap.fromTo(
+        ".overlay",
+        { right: "0%" }, // from
+        { right: "-100%", ease: "expo.in" } // to
+      );
       overlay.classList.remove("active");
     }
   };
