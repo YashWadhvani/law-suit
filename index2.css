@@ -540,6 +540,7 @@ html {
     display: flex; /* ADDED */
     flex-wrap: nowrap; /* ADDED */
     align-items: center; /* ADDED */
+    width: 100%;
   }
 
   .text-column,
