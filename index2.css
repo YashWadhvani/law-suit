@@ -1531,6 +1531,11 @@ html {
     opacity: 1;
   }
 
+  .image-gallery .col-sm-6 {
+    padding-left: 0 !important;
+    padding-right: 40px !important;
+  }
+
   .icons {
     display: inline-flex;
   }
@@ -1957,7 +1962,7 @@ html {
     padding: 0 15px;
   }
   .vision .col-sm-6 {
-    padding: 0 15px;
+    padding: 0px 15px;
   }
   .mission h1 {
     font-size: 11.5rem;
@@ -1972,6 +1977,7 @@ html {
   .vision p {
     font-weight: 500;
     font-size: 5.5rem;
+    width: 324px;
   }
   .mission-vision {
     margin-bottom: 30px;
