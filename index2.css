@@ -2065,6 +2065,8 @@ html {
   }
   .card-section .card {
     box-shadow: 10px 10px 5px #d9eafd;
+    height: fit-content;
+    min-height: fit-content;
   }
   .card-section .container-fluid {
     padding-left: 30px;
@@ -2074,7 +2076,9 @@ html {
   .card-section .container-fluid .row {
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+  }
+  .lastRow {
+    flex-direction: column;
   }
   .card .card-header {
     padding-left: 20px;
@@ -2105,7 +2109,7 @@ html {
   .list p {
     font-size: 4.7rem;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.25;
   }
   .card-2 .card-header {
     padding-left: 20px;
@@ -2140,6 +2144,18 @@ html {
 
   span.mo {
     font-size: 5.5rem !important;
+  }
+
+  .card ul {
+    bottom: 10px;
+  }
+
+  .lastRow .col-sm-5 .card ul {
+    bottom: 45px;
+  }
+
+  .lastRow .col-sm-5 .card {
+    min-height: fit-content;
   }
 
   .list ul li {
