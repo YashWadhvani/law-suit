@@ -2,6 +2,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(TextPlugin);
   gsap.registerPlugin(ScrollTrigger);
 
+  const currentUrl = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach((link) => {
+    if (link.getAttribute("href") === currentUrl) {
+      link.classList.add("active");
+      link.classList.remove("hover-underline-animation");
+    }
+  });
+
   //Toggle Menu
   const toggleMenu = () => {
     const isMenuOpen = document
