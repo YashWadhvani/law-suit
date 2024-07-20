@@ -2424,10 +2424,14 @@ html {
     padding-left: 30px;
     padding-right: 25px;
   }
+
+  .navbar-menu {
+    width: 90%;
+  }
   .navbar-menu .nav-link {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    padding-right: 30px;
+    padding-right: 15px;
   }
 
   .logo img {
@@ -2750,6 +2754,19 @@ html {
   }
   .social {
     font-size: 2.5rem;
+  }
+
+  .features-1 .container-fluid .col-sm-8 {
+    width: 100%;
+  }
+
+  .features-1 .container-fluid .col-sm-4 {
+    width: 100%;
+    display: none;
+  }
+
+  .features .container-fluid {
+    padding: 15px;
   }
 
   .aboutsection h1 {
