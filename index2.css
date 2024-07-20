@@ -2011,6 +2011,23 @@ html {
     font-size: 5.5rem;
   }
 
+  /* Features Page  */
+  .features-3 .container-fluid .col-sm-6 {
+    padding: 0 15px;
+  }
+
+  .features-2 .container-fluid {
+    padding: 0 15px;
+  }
+
+  .features-1 .container-fluid {
+    padding: 0 15px;
+  }
+
+  .features-1 .container-fluid .col-sm-4 {
+    padding: 0;
+  }
+
   /* About page */
   .aboutsection h1 {
     font-size: 11.5rem;
