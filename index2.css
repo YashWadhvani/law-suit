@@ -2028,6 +2028,11 @@ html {
     padding: 0;
   }
 
+  .features-1 .container-fluid .col-sm-4 img {
+    height: 90%;
+    width: 90%;
+  }
+
   /* About page */
   .aboutsection h1 {
     font-size: 11.5rem;
